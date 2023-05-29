@@ -43,6 +43,7 @@ local parcaConfig = {
           pprof_config: {
             fgprof: {
               enabled: true,
+              delta: true,
               path: '/debug/pprof/fgprof',
             },
           },
