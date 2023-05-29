@@ -17,8 +17,8 @@ local podProfileEndpointDefaults = {
   port: error 'must provide port',
   profilingConfig: {},
   scheme: 'http',
-  interval: '30s',
-  scrapeTimeout: '10s',
+  interval: '10s',
+  scrapeTimeout: '0s',
   relabelings: [],
   followRedirects: true,
 };
