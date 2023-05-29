@@ -1,3 +1,3 @@
-examples/parca.json
+examples/*.json
 examples/jsonnetfile.lock.json
 examples/vendor/

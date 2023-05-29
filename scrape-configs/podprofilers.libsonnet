@@ -1,5 +1,4 @@
 local common = import './common.libsonnet';
-local p = import 'github.com/parca-dev/parca/deploy/lib/parca/parca.libsonnet';
 
 local defaults = {
   name: 'must provide name',
