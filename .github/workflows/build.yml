@@ -17,7 +17,7 @@ env:
   # renovate: datasource=github-releases depName=jsonnet-bundler/jsonnet-bundler
   JB_VERSION: v0.6.0
   # renovate: datasource=github-releases depName=google/go-jsonnet
-  JSONNET_VERSION: v0.20.0
+  JSONNET_VERSION: v0.21.0
 
 jobs:
   build:
@@ -38,7 +38,7 @@ jobs:
           mkdir -p "${HOME}/.local/bin"
           echo "${HOME}/.local/bin" >>"${GITHUB_PATH}"
           gh --repo=google/go-jsonnet release download "${JSONNET_VERSION}" \
-            --output=- --pattern='go-jsonnet_*_Linux_x86_64.tar.gz' \
+            --output=- --pattern='go-jsonnet_Linux_x86_64.tar.gz' \
             | tar -zxvf - -C "${HOME}/.local/bin" jsonnet jsonnet-lint jsonnetfmt
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
